@@ -110,11 +110,11 @@ jobs:
 
         export KBUILD_BUILD_HOST=builder
 
-        export KBUILD_BUILD_USER=zainarbani
+        export KBUILD_BUILD_USER=clyfly
 
         export KBUILD_COMPILER_STRING="$(clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')"
 
-        echo "-OverHeat-LTO" > localversion
+        echo "-LastTime" > localversion
 
         make O=out ARCH=$ARCH ${{ github.event.inputs.KERNEL_DEFCONFIG }}
 
@@ -214,4 +214,4 @@ jobs:
 
           <b>Build Date: </b>${{ env.BUILD_DATE }}
 
-          <b>Maintainer: </b>@AnotherZain
+          <b>Maintainer: </b>@ClyFly

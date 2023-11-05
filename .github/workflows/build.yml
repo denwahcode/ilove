@@ -14,7 +14,7 @@ on:
 
         required: true
 
-        default: 'https://github.com/fjrXTR/android_kernel_xiaomi_rosemary.git'
+        default: 'https://github.com/clyfly/kernel-mtk.git'
 
       KERNEL_BRANCH:
 
@@ -22,7 +22,7 @@ on:
 
         required: true
 
-        default: 'rosemary-r-oss'
+        default: 's'
 
       KERNEL_DEFCONFIG:
 

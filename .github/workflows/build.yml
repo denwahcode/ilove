@@ -14,7 +14,7 @@ on:
 
         required: true
 
-        default: 'https://github.com/zainarbani/kernel-mtk'
+        default: 'https://github.com/fjrXTR/android_kernel_xiaomi_rosemary.git'
 
       KERNEL_BRANCH:
 
@@ -22,7 +22,7 @@ on:
 
         required: true
 
-        default: 's'
+        default: 'rosemary-r-oss'
 
       KERNEL_DEFCONFIG:
 
@@ -164,7 +164,7 @@ jobs:
 
           ${{ github.workspace }}/project/OverHeat-dev-ksu.zip
 
-        name: OverHeat-${{ env.BUILD_DATE }}
+        name: LastFor-Radinka-${{ env.BUILD_DATE }}
 
         tag_name: ${{ env.BUILD_DATE }}
 

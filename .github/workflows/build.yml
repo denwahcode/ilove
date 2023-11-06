@@ -6,11 +6,11 @@ on:
       KERNEL_REPO:
         description: 'KERNEL_REPO'
         required: true
-        default: 'https://github.com/clyfly/kernel_xiaomi_rosemary.git
+        default: 'https://github.com/clyfly/kernel_xiaomi_rosemary.git'
       KERNEL_BRANCH:
         description: 'KERNEL_BRANCH'
         required: true
-        default: 'saponaria'
+        default: 'rad-s'
       KERNEL_DEFCONFIG:
         description: 'KERNEL_DEFCONFIG'
         required: true

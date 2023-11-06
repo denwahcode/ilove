@@ -19,7 +19,7 @@ on:
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: buildjet-4vcpu-ubuntu-2204-arm
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:

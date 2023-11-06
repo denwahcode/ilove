@@ -71,9 +71,9 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/project/AnyKernel3
         cp $GITHUB_WORKSPACE/project/Image.gz-dtb Image.gz-dtb
-        zip -r9 $GITHUB_WORKSPACE/project/BionicPulse.zip -- *
+        zip -r9 $GITHUB_WORKSPACE/project/Rad-s.zip -- *
         cp $GITHUB_WORKSPACE/project/Image.gz-dtb-ksu Image.gz-dtb
-        zip -r9 $GITHUB_WORKSPACE/project/BionicPulse-KSU.zip -- *
+        zip -r9 $GITHUB_WORKSPACE/project/Rad-KSU.zip -- *
 
     - name: Upload Build Log and Release
       uses: actions/upload-artifact@v2
@@ -93,4 +93,4 @@ jobs:
         body: |
           Repo: ${{ github.event.inputs.KERNEL_REPO }}
           Branch: ${{ github.event.inputs.KERNEL_BRANCH }}
-          Config: ${{ github.event.inputs.KERNEL_DEFCONFIG }
+          Config: ${{ github.event.inputs.KERNEL_DEFCONFIG }}
